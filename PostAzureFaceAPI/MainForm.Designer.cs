@@ -56,13 +56,14 @@
             this.btn_Find.TabIndex = 1;
             this.btn_Find.Text = "Buscar";
             this.btn_Find.UseVisualStyleBackColor = true;
+            this.btn_Find.Click += new System.EventHandler(this.btn_Find_Click);
             // 
             // pct_Imagen
             // 
             this.pct_Imagen.Location = new System.Drawing.Point(12, 71);
             this.pct_Imagen.Name = "pct_Imagen";
             this.pct_Imagen.Size = new System.Drawing.Size(531, 370);
-            this.pct_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pct_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pct_Imagen.TabIndex = 2;
             this.pct_Imagen.TabStop = false;
             // 
