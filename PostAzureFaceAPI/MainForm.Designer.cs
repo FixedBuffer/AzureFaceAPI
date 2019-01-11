@@ -30,10 +30,10 @@
         {
             this.btn_Train = new System.Windows.Forms.Button();
             this.btn_Find = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pct_Imagen = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lbl_Status = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pct_Imagen)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,9 +45,11 @@
             this.btn_Train.TabIndex = 0;
             this.btn_Train.Text = "Entrenar grupo";
             this.btn_Train.UseVisualStyleBackColor = true;
+            this.btn_Train.Click += new System.EventHandler(this.btn_Train_Click);
             // 
             // btn_Find
             // 
+            this.btn_Find.Enabled = false;
             this.btn_Find.Location = new System.Drawing.Point(320, 12);
             this.btn_Find.Name = "btn_Find";
             this.btn_Find.Size = new System.Drawing.Size(223, 43);
@@ -55,13 +57,14 @@
             this.btn_Find.Text = "Buscar";
             this.btn_Find.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pct_Imagen
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(531, 370);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pct_Imagen.Location = new System.Drawing.Point(12, 71);
+            this.pct_Imagen.Name = "pct_Imagen";
+            this.pct_Imagen.Size = new System.Drawing.Size(531, 370);
+            this.pct_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pct_Imagen.TabIndex = 2;
+            this.pct_Imagen.TabStop = false;
             // 
             // statusStrip1
             // 
@@ -84,12 +87,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 473);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pct_Imagen);
             this.Controls.Add(this.btn_Find);
             this.Controls.Add(this.btn_Train);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Post Azure FaceAPI";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pct_Imagen)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -101,7 +105,7 @@
 
         private System.Windows.Forms.Button btn_Train;
         private System.Windows.Forms.Button btn_Find;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pct_Imagen;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lbl_Status;
     }
