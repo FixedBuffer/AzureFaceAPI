@@ -113,7 +113,6 @@ namespace PostAzureFaceAPI
                 }
                 GC.Collect();
             }
-
         }
 
         private async void btn_Find_Click(object sender, EventArgs e)
@@ -203,7 +202,6 @@ namespace PostAzureFaceAPI
 
                     }
                 }
-
             }
         }
     }
